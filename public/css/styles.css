@@ -1,0 +1,101 @@
+
+.navbar-form input, .form-inline input {
+  width:auto;
+}
+body {
+  padding-top:50px;
+  color:#646464;
+  background-color:#000000;
+}
+h2,h3,h5,.highlight,.navbar a,#masthead h4 {
+  font-family:'Oswald',arial narrow,sans-serif;
+}
+.navbar-bright {
+  background-color:#000000;
+  color:#fff;
+  margin-bottom: 0;
+  border-width: 0;
+}
+.navbar-bright a, .navbar-bright .navbar-brand, #masthead h4 {
+  color:#ccccdd;
+  font-size:14px;
+  text-transform: uppercase;
+  letter-spacing:.08em;
+}
+#a1{
+  color: grey;
+  float: right;
+}
+
+#hh{
+  border-top: 2px dotted rgb(77, 74, 74);
+}
+#hh1{
+  border-top:4px dotted rgb(77, 74, 74);
+}
+footer{
+  margin-top: 100px;
+  padding-top: 5px;
+  background-color:  rgb(66, 62, 62);
+  height: 50px;
+  width: auto;
+}
+form{
+  border: 2px solid #f1f1f1;
+  color: lightgray;
+}
+input[type=text],input[type=password]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.container1{
+  padding: 19px;
+}
+.login1{
+  width:500px;
+  height:235px;
+  margin:auto;
+  margin-top:100px;
+  text-align: left;   
+}
+.button1{
+  background-color: white;
+  color: black;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.button1:hover{
+  opacity:1;
+}
+.cancelbtn1{
+  color: black;
+  padding: 14px 20px;
+  background-color: darkgray;
+}
+.cancelbtn1, .signupbtn {
+  float: left;
+  width: 50%;
+}
+.container2{
+  padding: 16px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.signup{
+  margin-top:50px;
+  width:440px;
+  height:640px;
+  margin-bottom:100px ;
+  text-align: left;
+  margin-left:300px;
+}
