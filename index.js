@@ -1,6 +1,6 @@
 const { urlencoded } = require('express');
 const express = require('express');
-const port = process.env.PORT || 4122;
+// const port = process.env.PORT || 4122;
 const booksRouter = express.Router();
 const authorsRouter = express.Router();
 const addbookRouter = express.Router();
@@ -91,7 +91,7 @@ booksRouter.get('/',function(req,res){
     res.render("books",
     {
         nav:[{link:'/books',name:'BOOKS'},{link:'/author',name:'AUTHORS'},{link:'/addbook',name:'ADD BOOK'}],
-        nav1:[{link:'/signup',name:'SIGN UP'},{link:'/signin',name:'SIGN IN'}],
+        nav1:[{link:'/',name:'LOG OUT'}],
         books
     });
 });
@@ -100,7 +100,7 @@ booksRouter.get('/:id',function(req,res){
     res.render("book",
     {
         nav:[{link:'/books',name:'BOOKS'},{link:'/authors',name:'AUTHORS'},{link:'/addbook',name:'ADD BOOK'}],
-        nav1:[{link:'/signup',name:'SIGN UP'},{link:'/signin',name:'SIGN IN'}],
+        nav1:[{link:'/',name:'LOG OUT'}],
         book: books[id]
     });
 });
@@ -108,7 +108,7 @@ authorsRouter.get('/',function(req,res){
     res.render("authors",
     {
         nav:[{link:'/books',name:'BOOKS'},{link:'/authors',name:'AUTHORS'},{link:'/addbook',name:'ADD BOOK'}],
-        nav1:[{link:'/signup',name:'SIGN UP'},{link:'/signin',name:'SIGN IN'}],
+        nav1:[{link:'/',name:'LOG OUT'}],
         authors
     });
 });
@@ -117,7 +117,7 @@ authorsRouter.get('/:id',function(req,res){
     res.render("author",
     {
         nav:[{link:'/books',name:'BOOKS'},{link:'/authors',name:'AUTHORS'},{link:'/addbook',name:'ADD BOOK'}],
-        nav1:[{link:'/signup',name:'SIGN UP'},{link:'/signin',name:'SIGN IN'}],
+        nav1:[{link:'/',name:'LOG OUT'}],
         author: authors[id]
     });
 });
@@ -125,7 +125,7 @@ addbookRouter.get('/',function(req,res){
     res.render("addbook",
     {
         nav:[{link:'/books',name:'BOOKS'},{link:'/authors',name:'AUTHORS'},{link:'/addbook',name:'ADD BOOK'}],
-        nav1:[{link:'/signup',name:'SIGN UP'},{link:'/signin',name:'SIGN IN'}]
+        nav1:[{link:'/',name:'LOG OUT'}],
     });
 });
 signupRouter.get('/',function(req,res){
@@ -140,4 +140,4 @@ signinRouter.get('/',function(req,res){
         nav1:[{link:'/signup',name:'SIGN UP'},{link:'/signin',name:'SIGN IN'}]
     }); 
 });
-app.listen(port);
+app.listen(4122);
