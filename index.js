@@ -1,6 +1,6 @@
 const { urlencoded } = require('express');
 const express = require('express');
-// const port = process.env.PORT || 4122;
+const port = process.env.PORT || 4122;
 const booksRouter = express.Router();
 const authorsRouter = express.Router();
 const addbookRouter = express.Router();
@@ -140,4 +140,4 @@ signinRouter.get('/',function(req,res){
         nav1:[{link:'/signup',name:'SIGN UP'},{link:'/signin',name:'SIGN IN'}]
     }); 
 });
-app.listen(4122);
+app.listen(port);
